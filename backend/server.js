@@ -34,9 +34,12 @@ wss.on("connection", (ws) => {
   ws.on("message", async (message) => {
     const query = message.toString().toLowerCase();
 
-    const results = await Post.find({
-      title: { $regex: query, $options: "i" }
-    });
+  const results = await Post.find({
+  $or: [
+    { title: { $regex: query, $options: "i" } },
+    { body: { $regex: query, $options: "i" } }
+  ]
+});
 
     ws.send(JSON.stringify(results));
   });
