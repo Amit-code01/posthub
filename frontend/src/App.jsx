@@ -6,15 +6,15 @@ import PostList from "./components/PostList";
 const App = () => {
   const [posts, setPosts] = useState([]);
   const [loading, setLoading] = useState(true);
-
-  useEffect(() => {
-    axios.get("https://posthub-1-534i.onrender.com/api/posts")
-      .then(res => {
-        setPosts(res.data);
-        setLoading(false);
-      })
-      .catch(err => console.log(err));
-  }, []);
+  
+useEffect(() => {
+  axios.get(`${import.meta.env.VITE_API_URL}/posts`)
+    .then(res => {
+      setPosts(res.data);
+      setLoading(false);
+    })
+    .catch(err => console.log(err));
+}, []);
 
   return (
     <div className="page">
