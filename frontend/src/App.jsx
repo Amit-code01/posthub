@@ -8,7 +8,7 @@ const App = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    axios.get("https://posthub-1-534i.onrender.com")
+    axios.get("https://posthub-1-534i.onrender.com/api/posts")
       .then(res => {
         setPosts(res.data);
         setLoading(false);
