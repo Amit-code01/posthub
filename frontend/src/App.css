@@ -1,0 +1,195 @@
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: #d3e2d7;
+}
+
+/* PAGE */
+.page {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.logo {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.logo-icon {
+  width: 45px;
+  height: 45px;
+  background: linear-gradient(135deg, #7c3aed, #9333ea);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.logo h2 {
+  margin: 0;
+}
+
+.logo p {
+  margin: 0;
+  font-size: 12px;
+  color: #666;
+}
+
+/* STATUS */
+.status {
+  background: #e6f9f0;
+  color: #059669;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 14px;
+}
+
+/* SEARCH */
+.search-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.search-bar {
+  width: 100%;
+  padding: 14px;
+  border-radius: 14px;
+  border: none;
+  background: #fff;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  font-size: 15px;
+}
+
+/* COUNT */
+.count {
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.post-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.post-card {
+  display: flex;
+  gap: 16px;
+  padding: 18px;
+  border-radius: 14px;
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  transition: 0.2s;
+}
+
+.post-card:hover {
+  box-shadow: 0 6px 16px rgba(0,0,0,0.06);
+}
+
+.avatar {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #7c3aed, #9333ea);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  flex-shrink: 0;
+}
+
+.meta {
+  font-size: 13px;
+  color: #6b7280;
+  display: flex;
+  gap: 6px;
+  margin-bottom: 6px;
+}
+
+.title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #111827;
+}
+
+.body {
+  font-size: 14px;
+  color: #4b5563;
+}
+
+/* CARD */
+.post-card {
+  display: flex;
+  gap: 15px;
+  padding: 18px;
+  border-radius: 14px;
+  background: #fff;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+  transition: 0.2s;
+}
+
+.post-card:hover {
+  transform: translateY(-2px);
+}
+
+/* AVATAR */
+.avatar {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #7c3aed, #9333ea);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+/* CONTENT */
+.post-content h3 {
+  margin: 5px 0;
+  font-size: 16px;
+}
+
+.post-content p {
+  margin: 0;
+  color: #555;
+  font-size: 14px;
+}
+
+/* META */
+.meta {
+  font-size: 12px;
+  color: #777;
+  display: flex;
+  gap: 5px;
+}
+
+/* STATUS */
+.status-text {
+  text-align: center;
+}
+.tags {
+  margin-top: 8px;
+}
+
+.tag {
+  display: inline-block;
+  font-size: 12px;
+  color: #2563eb;
+  background: #eff6ff;
+  padding: 4px 10px;
+  border-radius: 999px;
+  margin-right: 6px;
+}
