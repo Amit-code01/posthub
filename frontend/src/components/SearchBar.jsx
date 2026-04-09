@@ -4,7 +4,7 @@ const SearchBar = ({ setPosts, setLoading }) => {
   const ws = useRef(null);
 
   useEffect(() => {
-    ws.current = new WebSocket("ws://posthub-1-534i.onrender.com");
+    ws.current = new WebSocket("wss://posthub-1-534i.onrender.com");
 
     ws.current.onmessage = (event) => {
       const data = JSON.parse(event.data);
